@@ -1,1 +1,6 @@
 Flask==1.1.2
+uuid
+flask_restful
+pandas
+Flask-SQLAlchemy
+psycopg2-binary

@@ -1,4 +1,4 @@
-services/web/uploads/
+services/web/uploads/*.csv
 .idea
 services/web/supervisord.log
 services/web/supervisord.pid

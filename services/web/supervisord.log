@@ -183,3 +183,10 @@
 2021-01-03 13:28:44,392 INFO success: worker-2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2021-01-03 13:28:44,393 INFO success: worker-3 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2021-01-03 13:28:44,393 INFO success: worker-4 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-03 13:47:41,115 WARN received SIGTERM indicating exit request
+2021-01-03 13:47:41,125 INFO waiting for worker-0, worker-1, worker-2, worker-3, worker-4 to die
+2021-01-03 13:47:41,488 INFO stopped: worker-0 (exit status 0)
+2021-01-03 13:47:41,490 INFO stopped: worker-3 (exit status 0)
+2021-01-03 13:47:41,491 INFO stopped: worker-4 (exit status 0)
+2021-01-03 13:47:41,515 INFO stopped: worker-1 (exit status 0)
+2021-01-03 13:47:41,517 INFO stopped: worker-2 (exit status 0)

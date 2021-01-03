@@ -4,3 +4,8 @@ flask_restful
 pandas
 Flask-SQLAlchemy
 psycopg2-binary
+redis
+rq
+requests
+opencage
+supervisor

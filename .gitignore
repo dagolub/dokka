@@ -1,2 +1,4 @@
 services/web/uploads/
 .idea
+services/web/supervisord.log
+services/web/supervisord.pid

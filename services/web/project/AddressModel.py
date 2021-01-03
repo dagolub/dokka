@@ -23,7 +23,11 @@ class AddressModel(db.Model):
         return db.engine.execute(sql)
 
     def get_all_points(self, request_id=False):
-        return db.engine.execute('SELECT * FROM "Address"')
+        sql = 'SELECT * FROM "Address"'
+        if request_id:
+            sql += " WHERE request_id = '" + request_id + "'"
+
+        return db.engine.execute(sql)
 
     def get_sql(self, request_id=False):
         sql = """select l.point||r.point as links,
@@ -36,6 +40,6 @@ class AddressModel(db.Model):
                         where r.point is not null"""
 
         if request_id:
-            sql += " and request_id = '" + request_id + "'"
+            sql += " and l.request_id = '" + request_id + "' and r.request_id = '" + request_id + "'"
 
         return sql

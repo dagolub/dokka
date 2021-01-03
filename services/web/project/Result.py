@@ -5,10 +5,12 @@ from .AddressModel import AddressModel
 
 class Result(Resource):
     def get(self):
-        response = {'points': [], 'links': []}
+        response = {'points': [], 'links': [], 'request_id':''}
         address = AddressModel()
-        points = address.get_all_points()
-        links = address.get_all_result()
+        request_id = request.args.get('request_id')
+        response['request_id'] = request_id
+        points = address.get_all_points(request_id)
+        links = address.get_all_result(request_id)
         for row in points:
             response['points'].append({
                 'point': row['point'],

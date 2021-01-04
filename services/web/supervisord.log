@@ -190,3 +190,34 @@
 2021-01-03 13:47:41,491 INFO stopped: worker-4 (exit status 0)
 2021-01-03 13:47:41,515 INFO stopped: worker-1 (exit status 0)
 2021-01-03 13:47:41,517 INFO stopped: worker-2 (exit status 0)
+2021-01-04 11:27:27,411 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-01-04 11:27:27,419 INFO supervisord started with pid 1
+2021-01-04 11:27:28,425 INFO spawned: 'worker-0' with pid 8
+2021-01-04 11:27:28,429 INFO spawned: 'worker-1' with pid 9
+2021-01-04 11:27:28,432 INFO spawned: 'worker-2' with pid 10
+2021-01-04 11:27:28,434 INFO spawned: 'worker-3' with pid 11
+2021-01-04 11:27:28,436 INFO spawned: 'worker-4' with pid 12
+2021-01-04 11:27:29,439 INFO success: worker-0 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-04 11:27:29,440 INFO success: worker-1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-04 11:27:29,440 INFO success: worker-2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-04 11:27:29,440 INFO success: worker-3 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-04 11:27:29,441 INFO success: worker-4 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-04 11:35:06,868 WARN received SIGTERM indicating exit request
+2021-01-04 11:35:06,871 INFO waiting for worker-0, worker-1, worker-2, worker-3, worker-4 to die
+2021-01-04 11:35:07,125 INFO stopped: worker-2 (exit status 0)
+2021-01-04 11:35:07,130 INFO stopped: worker-3 (exit status 0)
+2021-01-04 11:35:07,217 INFO stopped: worker-0 (exit status 0)
+2021-01-04 11:35:07,218 INFO stopped: worker-1 (exit status 0)
+2021-01-04 11:35:07,245 INFO stopped: worker-4 (exit status 0)
+2021-01-04 11:35:08,210 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-01-04 11:35:08,219 INFO supervisord started with pid 1
+2021-01-04 11:35:09,222 INFO spawned: 'worker-0' with pid 8
+2021-01-04 11:35:09,224 INFO spawned: 'worker-1' with pid 9
+2021-01-04 11:35:09,226 INFO spawned: 'worker-2' with pid 10
+2021-01-04 11:35:09,229 INFO spawned: 'worker-3' with pid 11
+2021-01-04 11:35:09,232 INFO spawned: 'worker-4' with pid 12
+2021-01-04 11:35:10,239 INFO success: worker-0 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-04 11:35:10,240 INFO success: worker-1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-04 11:35:10,240 INFO success: worker-2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-04 11:35:10,241 INFO success: worker-3 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-01-04 11:35:10,241 INFO success: worker-4 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
